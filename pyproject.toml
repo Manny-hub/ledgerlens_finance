@@ -1,0 +1,15 @@
+[project]
+name = "ledgerlens"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "apache-airflow>=3.1.6",
+    "apache-airflow-providers-google>=19.4.0",
+    "google-cloud-bigquery>=3.40.0",
+    "google-cloud-storage>=3.8.0",
+    "pandas>=2.3.2",
+    "pyarrow>=23.0.0",
+    "python-dotenv>=1.2.1",
+]
