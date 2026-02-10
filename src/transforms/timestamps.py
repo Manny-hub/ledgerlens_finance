@@ -7,6 +7,8 @@ def normalize_timestamps(ts: str | None, default_tz: str = "UTC") -> datetime | 
     if not ts:
        return None
     try: 
-        return to_utc(parse_to_dt(ts, default_tz=default_tz))
+        dt = parse_to_dt(ts, default_tz=default_tz)
+        dt = to_utc(dt)
+        return dt
     except Exception:
             return None
